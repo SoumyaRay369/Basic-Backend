@@ -3,12 +3,12 @@ const mongoose = require('mongoose')
 require('dotenv').config();
 
 const app = express();
-const PORT = 3000 || process.env.PORT;
+const PORT = 3000;
 
 app.get('/', (req, res) => {
     res.send("Hello World")
 })
 
-app.listen(PORT, ()=> {
+app.listen(3000, ()=> {
     console.log('Listening on port 3000')
 })
